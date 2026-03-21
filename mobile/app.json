@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "EcoMarket",
+    "slug": "ecomarket",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1B8A4E"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "EcoMarket necesita acceso a la cámara para fotografiar productos ecológicos.",
+        "NSPhotoLibraryUsageDescription": "EcoMarket necesita acceso a tu galería para guardar fotos de productos.",
+        "NSLocationWhenInUseUsageDescription": "EcoMarket usa tu ubicación para mostrarte productores locales cercanos."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1B8A4E"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_MEDIA_IMAGES",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": { "favicon": "./assets/favicon.png" }
+  }
+}
